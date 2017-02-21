@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Query all Mac .DS_Store and ._.DS_Store files"
+    jcr:primaryType="sling:OrderedFolder"
+    sling:resourceType="slingPipes/xpath"
+    expr="/jcr:root/content//(element(_x002e___x002e_DS_Store,nt:file)|element(_x002e_DS_Store,nt:file))"/>
