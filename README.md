@@ -6,11 +6,11 @@ This project contains [Apache Sling Pipes](https://sling.apache.org/documentatio
 
 Remove all macOS/OS X `.DS_Store` and `._.DS_Store` files from the `/content` folder which may have been added through WebDAV or another process:
 
-    curl -u admin:admin -X POST http://localhost:4502/etc/pipes/removeDsStore.json
+    curl -u admin:admin -X POST http://localhost:4502/etc/pipes/content/removeDsStore.json
 
 Get a list of Pages from `/content` that are missing the `jcr:content` child resource:
 
-    curl -u admin:admin -F size=-1 http://localhost:4502/etc/pipes/getPagesWithoutPageContent.json
+    curl -u admin:admin -F size=-1 http://localhost:4502/etc/pipes/content/getPagesWithoutPageContent.json
 
 Delete completed workflows older than a provided date:
 
