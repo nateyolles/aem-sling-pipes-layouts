@@ -29,5 +29,13 @@
                 <conf/>
             </toggleOff>
         </launchers>
+        <instances jcr:primaryType="nt:unstructured">
+            <deleteOlderThan
+                jcr:description="Delete all workflow instances older than ${date}"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="slingPipes/container">
+                <conf/>
+            </deleteOlderThan>
+        </instances>
     </workflow>
 </jcr:root>
