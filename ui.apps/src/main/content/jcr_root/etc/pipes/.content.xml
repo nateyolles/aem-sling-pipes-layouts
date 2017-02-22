@@ -14,4 +14,20 @@
         sling:resourceType="slingPipes/container">
         <conf/>
     </getPagesWithoutPageContent>
+    <workflow jcr:primaryType="nt:unstructured">
+        <launchers jcr:primaryType="nt:unstructured">
+            <toggleOn
+                jcr:description="Toggle on all workflow launchers that were previously toggled off"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="slingPipes/container">
+                <conf/>
+            </toggleOn>
+            <toggleOff
+                jcr:description="Toggle off all workflow launchers and save their previous state so that they can be toggled on"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="slingPipes/container">
+                <conf/>
+            </toggleOff>
+        </launchers>
+    </workflow>
 </jcr:root>

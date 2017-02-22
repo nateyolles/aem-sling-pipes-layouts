@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Toggle off the workflow launcher and mark the launcher as previously enabled"
+    jcr:primaryType="sling:OrderedFolder"
+    sling:resourceType="slingPipes/write">
+    <conf/>
+</jcr:root>

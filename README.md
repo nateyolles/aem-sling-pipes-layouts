@@ -16,6 +16,14 @@ Remove completed workflows older than a provided date:
 
     curl -u admin:admin http://localhost:4502/etc/pipes/removeWorkflows.json -F "bindings={date:'2016-07-04'}"
 
+Toggle off all workflow launchers:
+
+    curl -u admin:admin -X POST http://localhost:4502/etc/pipes/workflow/launchers/toggleOff.json
+
+Toggle on all workflow launchers:
+
+    curl -u admin:admin -X POST http://localhost:4502/etc/pipes/workflow/lauchers/toggleOn.json
+
 More to come...
 
 ## Install Dependencies
