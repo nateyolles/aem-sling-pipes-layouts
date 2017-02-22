@@ -1,6 +1,6 @@
 # AEM Sling Pipes Configurations/Layouts/Recipes
 
-This project contains [Apache Sling Pipes](https://sling.apache.org/documentation/bundles/sling-pipes.html) configurations for Adobe Experience Manager. These configurations could potentially be useful for an AEM project. Hopefully they'll at least be helpful examples what can be done with Sling Pipes.
+This project contains [Apache Sling Pipes](https://sling.apache.org/documentation/bundles/sling-pipes.html) configurations for Adobe Experience Manager. These configurations could potentially be useful for an AEM project. Hopefully they'll at least be helpful examples of what can be accomplished with Sling Pipes.
 
 ## Pipe Configurations
 
