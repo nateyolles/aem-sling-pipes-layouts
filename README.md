@@ -12,6 +12,10 @@ Get a list of Pages from `/content` that are missing the `jcr:content` child res
 
     curl -u admin:admin -F size=-1 http://localhost:4502/etc/pipes/getPagesWithoutPageContent.json
 
+Remove completed workflows older than a provided date:
+
+    curl -u admin:admin http://localhost:4502/etc/pipes/removeWorkflows.json -F "bindings={date:'2016-07-04'}"
+
 More to come...
 
 ## Install Dependencies

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Query all completed workflow instances older than the provided date binding"
+    jcr:primaryType="sling:OrderedFolder"
+    sling:resourceType="slingPipes/xpath"
+    expr="/jcr:root/etc/workflow/instances/server0//*[@jcr:primaryType=&quot;cq:Workflow&quot; and @status=&quot;COMPLETED&quot; and @endTime &lt;= &quot;${date}T00:00:00.000Z&quot;]"/>
