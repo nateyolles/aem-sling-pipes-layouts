@@ -2,29 +2,39 @@
 
 This project contains [Apache Sling Pipes](https://sling.apache.org/documentation/bundles/sling-pipes.html) configurations for Adobe Experience Manager. These configurations could potentially be useful for an AEM project. Hopefully they'll at least be helpful examples what can be done with Sling Pipes.
 
-## Configurations
+## Pipe Configurations
 
-Remove all macOS/OS X `.DS_Store` and `._.DS_Store` files from the `/content` folder which may have been added through WebDAV or another process:
+### Delete .DS_Store files
+
+Delete all macOS/OS X `.DS_Store` and `._.DS_Store` files from the `/content` folder which may have been added through WebDAV or another process:
 
     curl -u admin:admin -X POST http://localhost:4502/etc/pipes/content/removeDsStore.json
+
+### List pages missing jcr:content
 
 Get a list of Pages from `/content` that are missing the `jcr:content` child resource:
 
     curl -u admin:admin -F size=-1 http://localhost:4502/etc/pipes/content/getPagesWithoutPageContent.json
 
+### Delete old completed workflows
+
 Delete completed workflows older than a provided date:
 
     curl -u admin:admin -F "bindings={date:'2016-07-04'}" http://localhost:4502/etc/pipes/workflow/instances/deleteOlderThan.json
+
+### Turn off all workflow launchers
 
 Toggle off all workflow launchers:
 
     curl -u admin:admin -X POST http://localhost:4502/etc/pipes/workflow/launchers/toggleOff.json
 
+### Turn on workflow launchers
+
 Toggle on all workflow launchers:
 
     curl -u admin:admin -X POST http://localhost:4502/etc/pipes/workflow/lauchers/toggleOn.json
 
-More to come...
+### More to come...
 
 ## Install Dependencies
 
