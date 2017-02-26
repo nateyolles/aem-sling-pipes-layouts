@@ -8,7 +8,7 @@ This project contains [Apache Sling Pipes](https://sling.apache.org/documentatio
 
 Delete all macOS/OS X `.DS_Store` and `._.DS_Store` files from the `/content` folder which may have been added through WebDAV or another process:
 
-    *Currently works on AEM 6.3 but not AEM 6.2*
+*Currently works on AEM 6.3 but not AEM 6.2*
 
     curl -u admin:admin -X POST http://localhost:4502/etc/pipes/content/deleteDsStore.json
 
@@ -34,13 +34,13 @@ Delete completed workflows older than a provided date:
 
 ### Turn off all replication agents
 
-    *Currently works on AEM 6.2 but not AEM 6.3*
+*Currently works on AEM 6.2 but not AEM 6.3*
 
     curl -u admin:admin -X POST http://localhost:4502/etc/pipes/replication/agents/toggleOff.json
 
 ### Turn on replication agents
 
-    *Currently works on AEM 6.2 but not AEM 6.3*
+*Currently works on AEM 6.2 but not AEM 6.3*
 
     curl -u admin:admin -X POST http://localhost:4502/etc/pipes/replication/agents/toggleOn.json
 
