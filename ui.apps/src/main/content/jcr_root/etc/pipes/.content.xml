@@ -16,6 +16,22 @@
             <conf/>
         </getPagesWithoutPageContent>
     </content>
+    <replication jcr:primaryType="nt:unstructured">
+        <agents jcr:primaryType="nt:unstructured">
+            <toggleOn
+                jcr:description="Toggle on all replication agents that were previously toggled off"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="slingPipes/container">
+                <conf/>
+            </toggleOn>
+            <toggleOff
+                jcr:description="Toggle off all replication agentsand save their previous state so that they can be toggled on"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="slingPipes/container">
+                <conf/>
+            </toggleOff>
+        </agents>
+    </replication>
     <workflow jcr:primaryType="nt:unstructured">
         <launchers jcr:primaryType="nt:unstructured">
             <toggleOn
